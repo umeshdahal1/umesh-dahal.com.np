@@ -1,0 +1,79 @@
+<!-- 
+  Program Name   : Maintenance Landing Page for Personal Portfolio
+  Purpose        : Simple under-maintenance page with basic 3D animation and personal details
+  Author         : Umesh Dahal
+  Roll Number    : 8028116 (118\2080)
+  Email          : umesh.805511@cdp.tu.edu.np / umeshdahal.np@gmail.com
+  Institute      : Central Department of Physics, IOST, Tribhuvan University
+  Semester       : Third
+  Section        : B
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Umesh Dahal | Site Under Maintenance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0e0e0e;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    .cube {
+      width: 120px;
+      height: 120px;
+      margin: 40px auto;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: spin 10s linear infinite;
+    }
+    .face {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background: rgba(0,150,255,0.4);
+      border: 2px solid cyan;
+      line-height: 120px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+    .front  { transform: rotateY(  0deg) translateZ(60px); }
+    .back   { transform: rotateY(180deg) translateZ(60px); }
+    .right  { transform: rotateY( 90deg) translateZ(60px); }
+    .left   { transform: rotateY(-90deg) translateZ(60px); }
+    .top    { transform: rotateX( 90deg) translateZ(60px); }
+    .bottom { transform: rotateX(-90deg) translateZ(60px); }
+
+    @keyframes spin {
+      from { transform: rotateX(0deg) rotateY(0deg); }
+      to   { transform: rotateX(360deg) rotateY(360deg); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🚧 Site Under Maintenance 🚧</h1>
+  <p>
+    Hello, I am <strong>Umesh Dahal</strong>,<br>
+    Physicist · Central Department of Physics, Tribhuvan University<br><br>
+    This website is currently being developed.<br>
+    Please check back soon!
+  </p>
+
+  <div class="cube">
+    <div class="face front">DFT</div>
+    <div class="face back">Physics</div>
+    <div class="face right">Umesh</div>
+    <div class="face left">Dahal</div>
+    <div class="face top">3D</div>
+    <div class="face bottom">Cube</div>
+  </div>
+
+</body>
+</html>
