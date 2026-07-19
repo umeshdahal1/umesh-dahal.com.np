@@ -21,6 +21,7 @@ export default function Footer() {
 
         <nav className={styles.navigation} aria-label="Footer navigation">
           <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
           <Link href="/#research">Research</Link>
           <Link href="/#work">Selected Work</Link>
           <Link href="/#contact">Contact</Link>
