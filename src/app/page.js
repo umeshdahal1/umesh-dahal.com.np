@@ -57,7 +57,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section>
+        <section id="work">
           <h2>Selected Work</h2>
 
           <article>
