@@ -1,65 +1,97 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
+        <section className={styles.intro}>
+          <p>Physics · Computational Materials · Biophysics</p>
+
+          <h1>Umesh Dahal</h1>
+
+          <h2>Physics Student and Aspiring Researcher</h2>
+
           <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+            I am a physics student at the Central Department of Physics,
+            Tribhuvan University, Nepal. My academic interests include
+            computational physics, density functional theory, graphene,
+            nanomaterials, spectroscopy, and biophysical applications.
           </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+          <div className={styles.ctas}>
+            <a className={styles.primary} href="#research">
+              View Research
+            </a>
+
+            <a className={styles.secondary} href="#contact">
+              Contact Me
+            </a>
+          </div>
+        </section>
+
+        <section id="research">
+          <h2>Research Interests</h2>
+
+          <article>
+            <h3>Computational Materials Physics</h3>
+            <p>
+              Studying the electronic, structural, and physical properties of
+              materials using computational methods.
+            </p>
+          </article>
+
+          <article>
+            <h3>Graphene and Nanomaterials</h3>
+            <p>
+              Exploring graphite-derived graphene, synthesis methods,
+              spectroscopic characterization, and biomedical relevance.
+            </p>
+          </article>
+
+          <article>
+            <h3>Biophysics</h3>
+            <p>
+              Investigating how physical principles and materials can be applied
+              to biological and biomedical problems.
+            </p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Selected Work</h2>
+
+          <article>
+            <h3>
+              Graphene from Graphite: Synthesis, Spectroscopic Characterization,
+              and Biomedical Applications
+            </h3>
+            <p>Review manuscript in preparation.</p>
+          </article>
+
+          <article>
+            <h3>Electrostatic Dust Removal System for Solar Panels</h3>
+            <p>
+              An electrodynamic analysis of electrostatic methods for removing
+              dust from solar-panel surfaces.
+            </p>
+          </article>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+
+          <p>
+            Central Department of Physics
+            <br />
+            Tribhuvan University
+            <br />
+            Kirtipur, Kathmandu, Nepal
+          </p>
+
+          <p>
+            Professional email and academic profile links will be added soon.
+          </p>
+        </section>
       </main>
     </div>
   );
