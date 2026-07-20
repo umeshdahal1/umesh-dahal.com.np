@@ -19,11 +19,11 @@ export default function Home() {
           </p>
 
           <div className={styles.ctas}>
-            <a className={styles.primary} href="#research">
+            <a className={styles.primary} href="research">
               View Research
             </a>
 
-            <a className={styles.secondary} href="#contact">
+            <a className={styles.secondary} href="contact">
               Contact Me
             </a>
           </div>
