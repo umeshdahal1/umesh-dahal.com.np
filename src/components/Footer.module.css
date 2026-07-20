@@ -32,6 +32,31 @@
   line-height: 1.75;
 }
 
+.email {
+  display: inline-block;
+  margin-top: 18px;
+  color: #174f78;
+  font-size: 14px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-top: 16px;
+}
+
+.profiles a {
+  color: #354250;
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
 .navigation {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -63,8 +88,13 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .navigation a:hover {
+  .navigation a:hover,
+  .profiles a:hover {
     color: #174f78;
+  }
+
+  .email:hover {
+    text-decoration: underline;
   }
 }
 
@@ -105,6 +135,14 @@
   .affiliation,
   .bottom {
     color: #aab7c4;
+  }
+
+  .email {
+    color: #69b7e5;
+  }
+
+  .profiles a {
+    color: #c6d1dc;
   }
 
   .navigation a {

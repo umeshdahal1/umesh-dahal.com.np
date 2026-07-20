@@ -17,6 +17,44 @@ export default function Footer() {
             <br />
             Kirtipur, Kathmandu, Nepal
           </p>
+
+          <a className={styles.email} href="mailto:umeshdahal.np@gmail.com">
+            umeshdahal.np@gmail.com
+          </a>
+
+          <div className={styles.profiles}>
+            <a
+              href="https://github.com/umeshdahal1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/umedahal/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="https://orcid.org/0009-0003-9108-8801"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ORCID
+            </a>
+
+            <a
+              href="https://www.researchgate.net/profile/Umesh-Dahal-4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ResearchGate
+            </a>
+          </div>
         </div>
 
         <nav className={styles.navigation} aria-label="Footer navigation">
