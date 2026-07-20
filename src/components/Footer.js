@@ -23,7 +23,7 @@ export default function Footer() {
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/research">Research</Link>
-          <Link href="/#work">Selected Work</Link>
+          <Link href="/work">Selected Work</Link>
           <Link href="/#contact">Contact</Link>
         </nav>
       </div>
