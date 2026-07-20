@@ -76,21 +76,35 @@ export default function Home() {
             </p>
           </article>
         </section>
-
         <section id="contact">
           <h2>Contact</h2>
 
-          <p>
-            Central Department of Physics
-            <br />
-            Tribhuvan University
-            <br />
-            Kirtipur, Kathmandu, Nepal
-          </p>
+          <div className={styles.contactGrid}>
+            <article>
+              <h3>Academic Affiliation</h3>
 
-          <p>
-            Professional email and academic profile links will be added soon.
-          </p>
+              <p>
+                Central Department of Physics
+                <br />
+                Tribhuvan University
+                <br />
+                Kirtipur, Kathmandu, Nepal
+              </p>
+            </article>
+
+            <article>
+              <h3>Get in Touch</h3>
+
+              <p>
+                For academic communication, research collaboration, or
+                educational opportunities, please visit my Contact page.
+              </p>
+
+              <a className={styles.textLink} href="/contact">
+                View contact information →
+              </a>
+            </article>
+          </div>
         </section>
       </main>
     </div>
