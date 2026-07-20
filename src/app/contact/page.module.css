@@ -89,6 +89,20 @@
   text-transform: uppercase;
 }
 
+.emailLink {
+  display: inline-block;
+  color: #174f78;
+  font-size: 16px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.helper {
+  margin-top: 14px !important;
+  font-size: 14px !important;
+}
+
 .links {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -193,6 +207,10 @@
     color: #69b7e5 !important;
   }
 
+  .emailLink {
+    color: #69b7e5;
+  }
+
   .hero h1,
   .section > h2,
   .card h3,
@@ -215,6 +233,9 @@
   @media (hover: hover) and (pointer: fine) {
     .links a:hover {
       border-color: #69b7e5;
+    }
+    .emailLink:hover {
+      text-decoration: underline;
     }
   }
 }

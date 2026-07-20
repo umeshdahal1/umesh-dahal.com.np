@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Contact",
   description:
-    "Contact information and academic profile links for Umesh Dahal, a physics student at Tribhuvan University, Nepal.",
+    "Contact information and academic profiles of Umesh Dahal, a physics student at Tribhuvan University, Nepal.",
 };
 
 export default function ContactPage() {
@@ -42,22 +42,37 @@ export default function ContactPage() {
 
         <div className={styles.grid}>
           <article className={styles.card}>
-            <p className={styles.label}>Email</p>
+            <p className={styles.label}>Primary email</p>
 
-            <h3>Professional Email</h3>
+            <h3>Personal Email</h3>
 
-            <p>
-              A professional academic email address will be added here soon.
+            <a
+              className={styles.emailLink}
+              href="mailto:umeshdahal.np@gmail.com"
+            >
+              umeshdahal.np@gmail.com
+            </a>
+
+            <p className={styles.helper}>
+              Permanent contact address for academic and professional
+              communication.
             </p>
           </article>
 
           <article className={styles.card}>
-            <p className={styles.label}>Location</p>
+            <p className={styles.label}>Institutional email</p>
 
-            <h3>Kathmandu, Nepal</h3>
+            <h3>Tribhuvan University Email</h3>
 
-            <p>
-              Currently based at Tribhuvan University in Kirtipur, Kathmandu.
+            <a
+              className={styles.emailLink}
+              href="mailto:umesh.805511@cdp.tu.edu.np"
+            >
+              umesh.805511@cdp.tu.edu.np
+            </a>
+
+            <p className={styles.helper}>
+              Current academic email at the Central Department of Physics.
             </p>
           </article>
         </div>
@@ -80,24 +95,49 @@ export default function ContactPage() {
             <span aria-hidden="true">↗</span>
           </a>
 
+          <a
+            href="https://www.linkedin.com/in/umedahal/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              <strong>LinkedIn</strong>
+              <small>Professional and academic network</small>
+            </span>
+
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            href="https://orcid.org/0009-0003-9108-8801"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              <strong>ORCID</strong>
+              <small>0009-0003-9108-8801</small>
+            </span>
+
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            href="https://www.researchgate.net/profile/Umesh-Dahal-4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              <strong>ResearchGate</strong>
+              <small>Research and academic profile</small>
+            </span>
+
+            <span aria-hidden="true">↗</span>
+          </a>
+
           <div className={styles.pending}>
             <span>
               <strong>Google Scholar</strong>
               <small>Profile will be added when available</small>
-            </span>
-          </div>
-
-          <div className={styles.pending}>
-            <span>
-              <strong>ORCID</strong>
-              <small>Researcher identifier will be added later</small>
-            </span>
-          </div>
-
-          <div className={styles.pending}>
-            <span>
-              <strong>LinkedIn</strong>
-              <small>Professional profile will be added later</small>
             </span>
           </div>
         </div>
