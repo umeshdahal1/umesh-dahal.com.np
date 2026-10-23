@@ -122,40 +122,38 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .footer {
-    border-top-color: #2b3a47;
-    background: #151f29;
-  }
+:global(html[data-theme="dark"]) .footer {
+  border-top-color: #2b3a47;
+  background: #151f29;
+}
 
-  .name {
-    color: #edf2f7;
-  }
+:global(html[data-theme="dark"]) .name {
+  color: #edf2f7;
+}
 
-  .affiliation,
-  .bottom {
-    color: #aab7c4;
-  }
+:global(html[data-theme="dark"]) .affiliation,
+:global(html[data-theme="dark"]) .bottom {
+  color: #aab7c4;
+}
 
-  .email {
+:global(html[data-theme="dark"]) .email {
+  color: #69b7e5;
+}
+
+:global(html[data-theme="dark"]) .profiles a {
+  color: #c6d1dc;
+}
+
+:global(html[data-theme="dark"]) .navigation a {
+  color: #c6d1dc;
+}
+
+:global(html[data-theme="dark"]) .bottom {
+  border-top-color: #2b3a47;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :global(html[data-theme="dark"]) .navigation a:hover {
     color: #69b7e5;
-  }
-
-  .profiles a {
-    color: #c6d1dc;
-  }
-
-  .navigation a {
-    color: #c6d1dc;
-  }
-
-  .bottom {
-    border-top-color: #2b3a47;
-  }
-
-  @media (hover: hover) and (pointer: fine) {
-    .navigation a:hover {
-      color: #69b7e5;
-    }
   }
 }

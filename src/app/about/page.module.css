@@ -118,30 +118,28 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .hero,
-  .card {
-    border-color: #2b3a47;
-    background: #151f29;
-  }
+:global(html[data-theme="dark"]) .hero,
+:global(html[data-theme="dark"]) .card {
+  border-color: #2b3a47;
+  background: #151f29;
+}
 
-  .eyebrow,
-  .label {
-    color: #69b7e5 !important;
-  }
+:global(html[data-theme="dark"]) .eyebrow,
+:global(html[data-theme="dark"]) .label {
+  color: #69b7e5 !important;
+}
 
-  .hero h1,
-  .section > h2,
-  .card h3 {
-    color: #edf2f7;
-  }
+:global(html[data-theme="dark"]) .hero h1,
+:global(html[data-theme="dark"]) .section > h2,
+:global(html[data-theme="dark"]) .card h3 {
+  color: #edf2f7;
+}
 
-  .section > h2 {
-    border-bottom-color: #69b7e5;
-  }
+:global(html[data-theme="dark"]) .section > h2 {
+  border-bottom-color: #69b7e5;
+}
 
-  .introduction,
-  .card p {
-    color: #aab7c4;
-  }
+:global(html[data-theme="dark"]) .introduction,
+:global(html[data-theme="dark"]) .card p {
+  color: #aab7c4;
 }

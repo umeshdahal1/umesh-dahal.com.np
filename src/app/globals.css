@@ -1,12 +1,21 @@
-:root {
+:root,
+html[data-theme="light"] {
   --background: #f5f7fa;
   --foreground: #18202b;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --background: #0d141b;
+  --foreground: #edf2f7;
+  color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  html:not([data-theme]) {
     --background: #0d141b;
     --foreground: #edf2f7;
+    color-scheme: dark;
   }
 }
 

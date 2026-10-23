@@ -69,13 +69,33 @@ export const metadata = {
   },
 };
 
+const themeScript = `
+  (function () {
+    try {
+      const savedTheme = localStorage.getItem("theme");
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+
+      document.documentElement.dataset.theme = savedTheme || systemTheme;
+    } catch (error) {
+      document.documentElement.dataset.theme = "light";
+    }
+  })();
+`;
+
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable}`}
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+
       <body>
         <Header />
         {children}

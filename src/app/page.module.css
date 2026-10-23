@@ -277,36 +277,34 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --page-background: #0d141b;
-    --surface: #151f29;
-    --surface-soft: #1b2834;
-    --text-primary: #edf2f7;
-    --text-secondary: #aab7c4;
-    --accent: #69b7e5;
-    --accent-dark: #8ac9ed;
-    --border: #2b3a47;
-  }
+:global(html[data-theme="dark"]) .page {
+  --page-background: #0d141b;
+  --surface: #151f29;
+  --surface-soft: #1b2834;
+  --text-primary: #edf2f7;
+  --text-secondary: #aab7c4;
+  --accent: #69b7e5;
+  --accent-dark: #8ac9ed;
+  --border: #2b3a47;
+}
 
-  .primary {
-    color: #08131b;
-  }
+:global(html[data-theme="dark"]) .primary {
+  color: #08131b;
+}
 
-  .contactGrid article {
-    border-color: #2b3a47;
-    background: #151f29;
-  }
+:global(html[data-theme="dark"]) .contactGrid article {
+  border-color: #2b3a47;
+  background: #151f29;
+}
 
-  .contactGrid h3 {
-    color: #edf2f7;
-  }
+:global(html[data-theme="dark"]) .contactGrid h3 {
+  color: #edf2f7;
+}
 
-  .contactGrid p {
-    color: #aab7c4;
-  }
+:global(html[data-theme="dark"]) .contactGrid p {
+  color: #aab7c4;
+}
 
-  .textLink {
-    color: #69b7e5;
-  }
+:global(html[data-theme="dark"]) .textLink {
+  color: #69b7e5;
 }

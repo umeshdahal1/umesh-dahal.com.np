@@ -192,50 +192,49 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .hero,
-  .card,
-  .note,
-  .links a,
-  .pending {
-    border-color: #2b3a47;
-    background: #151f29;
+:global(html[data-theme="dark"]) .hero,
+:global(html[data-theme="dark"]) .card,
+:global(html[data-theme="dark"]) .note,
+:global(html[data-theme="dark"]) .links a,
+:global(html[data-theme="dark"]) .pending {
+  border-color: #2b3a47;
+  background: #151f29;
+}
+
+:global(html[data-theme="dark"]) .eyebrow,
+:global(html[data-theme="dark"]) .label {
+  color: #69b7e5 !important;
+}
+
+:global(html[data-theme="dark"]) .emailLink {
+  color: #69b7e5;
+}
+
+:global(html[data-theme="dark"]) .hero h1,
+:global(html[data-theme="dark"]) .section > h2,
+:global(html[data-theme="dark"]) .card h3,
+:global(html[data-theme="dark"]) .links a {
+  color: #edf2f7;
+}
+
+:global(html[data-theme="dark"]) .section > h2 {
+  border-bottom-color: #69b7e5;
+}
+
+:global(html[data-theme="dark"]) .introduction,
+:global(html[data-theme="dark"]) .card p,
+:global(html[data-theme="dark"]) .note p,
+:global(html[data-theme="dark"]) .pending,
+:global(html[data-theme="dark"]) .links small {
+  color: #aab7c4;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :global(html[data-theme="dark"]) .links a:hover {
+    border-color: #69b7e5;
   }
 
-  .eyebrow,
-  .label {
-    color: #69b7e5 !important;
-  }
-
-  .emailLink {
-    color: #69b7e5;
-  }
-
-  .hero h1,
-  .section > h2,
-  .card h3,
-  .links a {
-    color: #edf2f7;
-  }
-
-  .section > h2 {
-    border-bottom-color: #69b7e5;
-  }
-
-  .introduction,
-  .card p,
-  .note p,
-  .pending,
-  .links small {
-    color: #aab7c4;
-  }
-
-  @media (hover: hover) and (pointer: fine) {
-    .links a:hover {
-      border-color: #69b7e5;
-    }
-    .emailLink:hover {
-      text-decoration: underline;
-    }
+  :global(html[data-theme="dark"]) .emailLink:hover {
+    text-decoration: underline;
   }
 }

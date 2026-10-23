@@ -152,41 +152,39 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .hero,
-  .card,
-  .project {
-    border-color: #2b3a47;
-    background: #151f29;
-  }
+:global(html[data-theme="dark"]) .hero,
+:global(html[data-theme="dark"]) .card,
+:global(html[data-theme="dark"]) .project {
+  border-color: #2b3a47;
+  background: #151f29;
+}
 
-  .eyebrow,
-  .label {
-    color: #69b7e5 !important;
-  }
+:global(html[data-theme="dark"]) .eyebrow,
+:global(html[data-theme="dark"]) .label {
+  color: #69b7e5 !important;
+}
 
-  .hero h1,
-  .section > h2,
-  .card h3,
-  .project h3 {
-    color: #edf2f7;
-  }
+:global(html[data-theme="dark"]) .hero h1,
+:global(html[data-theme="dark"]) .section > h2,
+:global(html[data-theme="dark"]) .card h3,
+:global(html[data-theme="dark"]) .project h3 {
+  color: #edf2f7;
+}
 
-  .section > h2 {
-    border-bottom-color: #69b7e5;
-  }
+:global(html[data-theme="dark"]) .section > h2 {
+  border-bottom-color: #69b7e5;
+}
 
-  .introduction,
-  .card p,
-  .project p,
-  .card ul {
-    color: #aab7c4;
-  }
+:global(html[data-theme="dark"]) .introduction,
+:global(html[data-theme="dark"]) .card p,
+:global(html[data-theme="dark"]) .project p,
+:global(html[data-theme="dark"]) .card ul {
+  color: #aab7c4;
+}
 
-  @media (hover: hover) and (pointer: fine) {
-    .card:hover,
-    .project:hover {
-      border-color: #69b7e5;
-    }
+@media (hover: hover) and (pointer: fine) {
+  :global(html[data-theme="dark"]) .card:hover,
+  :global(html[data-theme="dark"]) .project:hover {
+    border-color: #69b7e5;
   }
 }

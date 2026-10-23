@@ -169,45 +169,43 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .hero,
-  .card,
-  .note {
-    border-color: #2b3a47;
-    background: #151f29;
-  }
+:global(html[data-theme="dark"]) .hero,
+:global(html[data-theme="dark"]) .card,
+:global(html[data-theme="dark"]) .note {
+  border-color: #2b3a47;
+  background: #151f29;
+}
 
-  .eyebrow,
-  .category {
-    color: #69b7e5;
-  }
+:global(html[data-theme="dark"]) .eyebrow,
+:global(html[data-theme="dark"]) .category {
+  color: #69b7e5;
+}
 
-  .hero h1,
-  .section > h2,
-  .card h3 {
-    color: #edf2f7;
-  }
+:global(html[data-theme="dark"]) .hero h1,
+:global(html[data-theme="dark"]) .section > h2,
+:global(html[data-theme="dark"]) .card h3 {
+  color: #edf2f7;
+}
 
-  .section > h2 {
-    border-bottom-color: #69b7e5;
-  }
+:global(html[data-theme="dark"]) .section > h2 {
+  border-bottom-color: #69b7e5;
+}
 
-  .introduction,
-  .description,
-  .note p,
-  .status {
-    color: #aab7c4;
-  }
+:global(html[data-theme="dark"]) .introduction,
+:global(html[data-theme="dark"]) .description,
+:global(html[data-theme="dark"]) .note p,
+:global(html[data-theme="dark"]) .status {
+  color: #aab7c4;
+}
 
-  .topics li {
-    border-color: #2b3a47;
-    background: #1b2834;
-    color: #c6d1dc;
-  }
+:global(html[data-theme="dark"]) .topics li {
+  border-color: #2b3a47;
+  background: #1b2834;
+  color: #c6d1dc;
+}
 
-  @media (hover: hover) and (pointer: fine) {
-    .card:hover {
-      border-color: #69b7e5;
-    }
+@media (hover: hover) and (pointer: fine) {
+  :global(html[data-theme="dark"]) .card:hover {
+    border-color: #69b7e5;
   }
 }
